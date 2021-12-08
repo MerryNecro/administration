@@ -21,6 +21,14 @@ pipeline {
             			}
         		}
         	}
+		stage('Archive'){
+                	steps{
+            			dir('C:\\'){
+                			zip zipFile: "${BUILD_NUMBER}.zip", archive:false, dir: 'Results'
+                		archiveArtifacts artifacts: "${BUILD_NUMBER}.zip"
+            			}
+        		}
+        	}
 
     	    }
 
