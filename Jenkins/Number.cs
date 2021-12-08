@@ -8,7 +8,7 @@ namespace Jenkins
     {
         public int GetNumber(int number)
         {
-            return number+1;
+            return number;
         }
     }
 }
