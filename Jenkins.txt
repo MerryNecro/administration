@@ -17,7 +17,7 @@ pipeline {
             	steps{
             		dir('C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\')
             			{
-                		bat('vstest.console.exe C:\Results\bin\JenkinsTest\JenkinsMsTest.dll --logger:"trx;LogFileName=custom_file_name.trx" --ResultsDirectory:C:\Results')
+                		bat('vstest.console.exe C:\\Results\\bin\\JenkinsTest\\JenkinsMsTest.dll --logger:"trx;LogFileName=custom_file_name.trx" --ResultsDirectory:C:\\Results')
             			}
         		}
         	}
